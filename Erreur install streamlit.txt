@@ -1,0 +1,61 @@
+(base) C:\Users\userL1>conda activate envpython
+
+(envpython) C:\Users\userL1>pip install streamlit
+'pip' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+(envpython) C:\Users\userL1>conda install pip
+Collecting package metadata (current_repodata.json): failed
+
+CondaSSLError: OpenSSL appears to be unavailable on this machine. OpenSSL is required to
+download and install packages.
+
+Exception: HTTPSConnectionPool(host='repo.anaconda.com', port=443): Max retries exceeded with url: /pkgs/main/win-64/current_repodata.json (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available."))
+
+
+
+(envpython) C:\Users\userL1>conda update conda
+
+PackageNotInstalledError: Package is not installed in prefix.
+  prefix: C:\Users\userL1\anaconda3\envs\envpython
+  package name: conda
+
+
+
+(envpython) C:\Users\userL1>conda update conda --all --repodata-fn=repodata.json
+Collecting package metadata (repodata.json): failed
+
+CondaSSLError: OpenSSL appears to be unavailable on this machine. OpenSSL is required to
+download and install packages.
+
+Exception: HTTPSConnectionPool(host='repo.anaconda.com', port=443): Max retries exceeded with url: /pkgs/main/win-64/repodata.json (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available."))
+
+
+
+(envpython) C:\Users\userL1>conda install streamlit
+Collecting package metadata (current_repodata.json): failed
+
+CondaSSLError: OpenSSL appears to be unavailable on this machine. OpenSSL is required to
+download and install packages.
+
+Exception: HTTPSConnectionPool(host='repo.anaconda.com', port=443): Max retries exceeded with url: /pkgs/main/win-64/current_repodata.json (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available."))
+
+
+
+(envpython) C:\Users\userL1>conda install openssl --repodata-fn=repodata.json
+Collecting package metadata (repodata.json): failed
+
+CondaSSLError: OpenSSL appears to be unavailable on this machine. OpenSSL is required to
+download and install packages.
+
+Exception: HTTPSConnectionPool(host='repo.anaconda.com', port=443): Max retries exceeded with url: /pkgs/main/win-64/repodata.json (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available."))
+
+
+
+(envpython) C:\Users\userL1>conda install C:\Work\Jade\Applications\openssl-3.0.15-h827c3e9_0\openssl-1.1.1k-h2bbff1b_0.
+tar.bz2
+
+Downloading and Extracting Packages
+                                                                                                                |   0%
+
+PathNotFoundError: C:/Work/Jade/Applications/openssl-3.0.15-h827c3e9_0/openssl-1.1.1k-h2bbff1b_0.tar.bz2
